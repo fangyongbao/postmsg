@@ -1,0 +1,3 @@
+{
+  "presets": ["@alipay/babel-preset-kobe"]
+}

@@ -1,10 +1,16 @@
 {
-  "name": "postmsg",
-  "version": "1.0.0",
+  "name": "gubao_postmsg",
+  "version": "1.0.1-beta",
   "description": "H5 postMessage封装",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tnpm run clean && babel src -d lib",
+    "clean": "rimraf lib"
+  },
+  "devDependencies": {
+    "@alipay/babel-preset-kobe": "1",
+    "babel-cli": "6",
+    "rimraf": "2"
   },
   "author": "孤豹",
   "license": "ISC"
