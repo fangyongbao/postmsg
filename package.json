@@ -1,6 +1,6 @@
 {
-  "name": "gubao_postmsg",
-  "version": "1.0.1-beta",
+  "name": "kb_postmsg",
+  "version": "1.0.1",
   "description": "H5 postMessage封装",
   "main": "lib/index.js",
   "scripts": {

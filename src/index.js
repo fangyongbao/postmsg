@@ -22,7 +22,7 @@ export default class Postmsg {
    */
   _init() {
     if (this.message === 'undefined') {
-      console.warning('浏览器不支持postMessage');
+      console.warn('浏览器不支持postMessage');
       return;
     }
   }
@@ -33,7 +33,7 @@ export default class Postmsg {
    */
   addTarget(name, target) {
     if (this.targets[name]) {
-      console.warning('目标窗口已存在，请勿重复添加');
+      console.warn('目标窗口已存在，请勿重复添加');
     } else {
       this.targets[name] = target;
     }
@@ -62,7 +62,7 @@ export default class Postmsg {
     if (this.targets[name]) {
       this.targets[name].postMessage(msg, origin || this.options.origin || '*');
     } else {
-      console.warning('目标窗口不存在');
+      console.warn('目标窗口不存在');
     }
   }
 
