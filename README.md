@@ -27,6 +27,7 @@ posmsg.send('parent', data);
 ```
 ### 子窗口向父窗口发消息
 import Postmsg from 'kb_postmsg';
+const posmsg = new Postmsg();
 posmsg.addTarget('parent', parent); // 添加父窗口
 posmsg.send('parent', data);
 
