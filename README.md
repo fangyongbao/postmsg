@@ -3,7 +3,7 @@ H5 postMessage封装
 
 ### 使用
 ``` 
-import Postmsg from 'gubao_postmsg';
+import Postmsg from 'kb_postmsg';
 
 // 初始化Postmsg
 const posmsg = new Postmsg();
@@ -22,3 +22,15 @@ posmsg.send('authIframe', data);
 
 // 向父窗口发送消息
 posmsg.send('parent', data);
+
+
+### 子窗口向父窗口发消息
+import Postmsg from 'kb_postmsg';
+posmsg.addTarget('parent', parent); // 添加父窗口
+posmsg.send('parent', data);
+
+// data数据格式：
+{
+   type: 'setHeight',
+   value: number, // 高度
+}
