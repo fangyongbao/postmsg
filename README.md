@@ -22,8 +22,9 @@ posmsg.send('authIframe', data);
 
 // 向父窗口发送消息
 posmsg.send('parent', data);
+```
 
-
+```
 ### 子窗口向父窗口发消息
 import Postmsg from 'kb_postmsg';
 posmsg.addTarget('parent', parent); // 添加父窗口
@@ -34,3 +35,4 @@ posmsg.send('parent', data);
    type: 'setHeight',
    value: number, // 高度
 }
+```
